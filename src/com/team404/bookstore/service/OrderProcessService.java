@@ -158,6 +158,7 @@ public class OrderProcessService {
         orderEntity.setTotalprice(CalculateTotalPrice(list));
         orderEntity.setAddressid(addressDao.getAddressByUid(userid).getId());
         orderEntity.setStatus("Processing");
+
         if(addressDao.getAddressByUid(userid).getProvince().equals("ON")) {
             orderEntity.setShipping(5);
             orderEntity.setTax(orderEntity.getTotalprice()*0.13);
@@ -167,6 +168,7 @@ public class OrderProcessService {
             orderEntity.setTax(orderEntity.getTotalprice()*0.08);
             orderEntity.setAftertaxprice(orderEntity.getTotalprice()*1.08+orderEntity.getShipping());
         }
+
         orderEntity.setAmount(CalculateAmount(list));
 
         int id = orderDao.AddOrder(orderEntity);

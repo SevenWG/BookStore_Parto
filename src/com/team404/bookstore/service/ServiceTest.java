@@ -39,8 +39,8 @@ public class ServiceTest {
 //        BookEntity bookEntity = productCatalogService.getProductInfo("1627794258");
 //        System.out.println(bookEntity.getBookid() + " " + bookEntity.getTitle() + " " + bookEntity. getPrice());
 
-//        CategoryEntity categoryEntity = productCatalogService.getCategory(1);
-////        System.out.println(categoryEntity.getId() + " " + categoryEntity.getCategory());
+        CategoryEntity categoryEntity = productCatalogService.getCategory(1);
+        System.out.println(categoryEntity.getId() + " " + categoryEntity.getCategory());
 
 
 

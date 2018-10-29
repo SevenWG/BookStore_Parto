@@ -23,7 +23,7 @@
         <h2>About Us</h2>
         <div class="contact-infom">
             <h4>Introduction :</h4>
-            <p>At Amazon, we believe that innovation has the power to change the world. As we strive to become Earth's most customer-centric company, we constantly look for new ways to innovate on behalf of our different customers: individuals who shop our global websites, merchants who sell on our platform, developers who use our infrastructure to create their businesses, and creators of the books, music, films, games and other content we sell through our websites. We believe that our greatest contribution to the good of society comes directly from these core business activities.</p>
+            <p>Bookstore gives you an online shopping cart and point-of-sale system for your school's bookstore. Online shoppers can browse and purchase items via the shopping interface.  Students who want to pay later can charge their Bookstore orders to their accounts. On the back end, you can manage account and view online orders. Additionally, all Bookstore transactions are automatically fed into your General Ledger.</p>
             <p>We only open from Monday - Friday 8:00 AM to 16:00 PM</p>
         </div>
         <div class="contact-infom">

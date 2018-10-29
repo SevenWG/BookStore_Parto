@@ -1,0 +1,17 @@
+Hibernate: select categoryen0_.id as id1_2_, categoryen0_.category as category2_2_ from Category categoryen0_
+getCategoryList Function Test: [com.team404.bookstore.entity.CategoryEntity@24588878, com.team404.bookstore.entity.CategoryEntity@4d6cb367, com.team404.bookstore.entity.CategoryEntity@63dd6cb2, com.team404.bookstore.entity.CategoryEntity@363d5116]
+
+Hibernate: select bookentity0_.bookid as bookid1_1_, bookentity0_.title as title2_1_, bookentity0_.price as price3_1_, bookentity0_.author as author4_1_, bookentity0_.categoryid as category5_1_, bookentity0_.imgURL as imgURL6_1_, bookentity0_.description as descript7_1_, bookentity0_.publisher_year as publishe8_1_ from BOOK bookentity0_
+getProductList Function Test: [com.team404.bookstore.entity.BookEntity@5bd1d598, com.team404.bookstore.entity.BookEntity@41505d8, com.team404.bookstore.entity.BookEntity@4a868ed8, com.team404.bookstore.entity.BookEntity@fee1a557, com.team404.bookstore.entity.BookEntity@4641b395, com.team404.bookstore.entity.BookEntity@7702de62, com.team404.bookstore.entity.BookEntity@a448b79d, com.team404.bookstore.entity.BookEntity@4da44d05, com.team404.bookstore.entity.BookEntity@dc6df39b]
+
+Hibernate: select bookentity0_.bookid as bookid1_1_, bookentity0_.title as title2_1_, bookentity0_.price as price3_1_, bookentity0_.author as author4_1_, bookentity0_.categoryid as category5_1_, bookentity0_.imgURL as imgURL6_1_, bookentity0_.description as descript7_1_, bookentity0_.publisher_year as publishe8_1_ from BOOK bookentity0_ where bookentity0_.categoryid=?
+getProductList Function(Rewrite) Test: [com.team404.bookstore.entity.BookEntity@5bd1d598, com.team404.bookstore.entity.BookEntity@4a868ed8, com.team404.bookstore.entity.BookEntity@4da44d05]
+
+Hibernate: select bookentity0_.bookid as bookid1_1_0_, bookentity0_.title as title2_1_0_, bookentity0_.price as price3_1_0_, bookentity0_.author as author4_1_0_, bookentity0_.categoryid as category5_1_0_, bookentity0_.imgURL as imgURL6_1_0_, bookentity0_.description as descript7_1_0_, bookentity0_.publisher_year as publishe8_1_0_ from BOOK bookentity0_ where bookentity0_.bookid=?
+getProductInfo Function Test: com.team404.bookstore.entity.BookEntity@4a868ed8
+Hibernate: select bookentity0_.bookid as bookid1_1_0_, bookentity0_.title as title2_1_0_, bookentity0_.price as price3_1_0_, bookentity0_.author as author4_1_0_, bookentity0_.categoryid as category5_1_0_, bookentity0_.imgURL as imgURL6_1_0_, bookentity0_.description as descript7_1_0_, bookentity0_.publisher_year as publishe8_1_0_ from BOOK bookentity0_ where bookentity0_.bookid=?
+1118008189 HTML AND CSS: DESIGN AND BUILD WEBSITES Jon Duckett 1599
+
+Hibernate: select categoryen0_.id as id1_2_0_, categoryen0_.category as category2_2_0_ from Category categoryen0_ where categoryen0_.id=?
+getCategory Function Test: com.team404.bookstore.entity.CategoryEntity@24588878
+

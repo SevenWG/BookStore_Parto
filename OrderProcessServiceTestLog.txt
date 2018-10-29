@@ -1,0 +1,65 @@
+Hibernate: select userentity0_.id as id1_7_, userentity0_.username as username2_7_, userentity0_.password as password3_7_, userentity0_.firstname as firstnam4_7_, userentity0_.lastname as lastname5_7_ from User userentity0_ where userentity0_.username=?
+CreateAccount Function Test: false
+getAccount Function Test: true
+Hibernate: select userentity0_.id as id1_7_, userentity0_.username as username2_7_, userentity0_.password as password3_7_, userentity0_.firstname as firstnam4_7_, userentity0_.lastname as lastname5_7_ from User userentity0_ where userentity0_.username=?
+getAccount Function Test: true
+
+getUserByAccount Function Test: 4 weiw4180@gmail.com 
+
+getUserinfo Function Test: 2 test2@test.com 
+
+2 34 Rue St-Dominiqu QC Canada K2E 6K5514-123-8569 2
+
+Hibernate: select shoppingca0_.id as id1_6_, shoppingca0_.userid as userid2_6_, shoppingca0_.bookid as bookid3_6_, shoppingca0_.quantity as quantity4_6_ from ShoppingCart shoppingca0_ where shoppingca0_.userid=? and shoppingca0_.bookid=?
+Hibernate: insert into ShoppingCart (userid, bookid, quantity, id) values (?, ?, ?, ?)
+AddItemtoCart Function Test: true
+
+Hibernate: select shoppingca0_.id as id1_6_, shoppingca0_.userid as userid2_6_, shoppingca0_.bookid as bookid3_6_, shoppingca0_.quantity as quantity4_6_ from ShoppingCart shoppingca0_ where shoppingca0_.userid=?
+displayShoppingCart Function Test: [com.team404.bookstore.entity.ShoppingCartEntity@fd264b1]
+
+Hibernate: delete from ShoppingCart where id=?
+DeleteSingleItem Function Test: true
+
+Hibernate: select shoppingca0_.id as id1_6_, shoppingca0_.userid as userid2_6_, shoppingca0_.bookid as bookid3_6_, shoppingca0_.quantity as quantity4_6_ from ShoppingCart shoppingca0_ where shoppingca0_.userid=? and shoppingca0_.bookid=?
+Hibernate: insert into ShoppingCart (userid, bookid, quantity, id) values (?, ?, ?, ?)
+AddItemtoCart Function Test: true
+
+CalculateAmount Function Test: 10
+
+
+Hibernate: select bookentity0_.bookid as bookid1_1_0_, bookentity0_.title as title2_1_0_, bookentity0_.price as price3_1_0_, bookentity0_.author as author4_1_0_, bookentity0_.categoryid as category5_1_0_, bookentity0_.imgURL as imgURL6_1_0_, bookentity0_.description as descript7_1_0_, bookentity0_.publisher_year as publishe8_1_0_ from BOOK bookentity0_ where bookentity0_.bookid=?
+Hibernate: select bookentity0_.bookid as bookid1_1_0_, bookentity0_.title as title2_1_0_, bookentity0_.price as price3_1_0_, bookentity0_.author as author4_1_0_, bookentity0_.categoryid as category5_1_0_, bookentity0_.imgURL as imgURL6_1_0_, bookentity0_.description as descript7_1_0_, bookentity0_.publisher_year as publishe8_1_0_ from BOOK bookentity0_ where bookentity0_.bookid=?
+CalculateTotalPrice Function Test: 10600.0
+
+
+GetOrderGenerationTime Function Test: 2018-10-28 18:13:33
+
+Hibernate: select shoppingca0_.id as id1_6_, shoppingca0_.userid as userid2_6_, shoppingca0_.bookid as bookid3_6_, shoppingca0_.quantity as quantity4_6_ from ShoppingCart shoppingca0_ where shoppingca0_.userid=? and shoppingca0_.bookid=?
+Hibernate: insert into ShoppingCart (userid, bookid, quantity, id) values (?, ?, ?, ?)
+AddItemtoCart Function Test: true
+
+Hibernate: select shoppingca0_.id as id1_6_, shoppingca0_.userid as userid2_6_, shoppingca0_.bookid as bookid3_6_, shoppingca0_.quantity as quantity4_6_ from ShoppingCart shoppingca0_ where shoppingca0_.userid=?
+Hibernate: select bookentity0_.bookid as bookid1_1_0_, bookentity0_.title as title2_1_0_, bookentity0_.price as price3_1_0_, bookentity0_.author as author4_1_0_, bookentity0_.categoryid as category5_1_0_, bookentity0_.imgURL as imgURL6_1_0_, bookentity0_.description as descript7_1_0_, bookentity0_.publisher_year as publishe8_1_0_ from BOOK bookentity0_ where bookentity0_.bookid=?
+Hibernate: select bookentity0_.bookid as bookid1_1_0_, bookentity0_.title as title2_1_0_, bookentity0_.price as price3_1_0_, bookentity0_.author as author4_1_0_, bookentity0_.categoryid as category5_1_0_, bookentity0_.imgURL as imgURL6_1_0_, bookentity0_.description as descript7_1_0_, bookentity0_.publisher_year as publishe8_1_0_ from BOOK bookentity0_ where bookentity0_.bookid=?
+Hibernate: select addressent0_.id as id1_0_, addressent0_.street as street2_0_, addressent0_.province as province3_0_, addressent0_.country as country4_0_, addressent0_.zip as zip5_0_, addressent0_.phone as phone6_0_, addressent0_.userid as userid7_0_ from Address addressent0_ where addressent0_.userid=?
+Hibernate: select addressent0_.id as id1_0_, addressent0_.street as street2_0_, addressent0_.province as province3_0_, addressent0_.country as country4_0_, addressent0_.zip as zip5_0_, addressent0_.phone as phone6_0_, addressent0_.userid as userid7_0_ from Address addressent0_ where addressent0_.userid=?
+Hibernate: insert into Orders (userid, generationtime, totalprice, addressid, status, shipping, tax, aftertaxprice, amount) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into OrderBook (orderid, bookid, quantity, id) values (?, ?, ?, ?)
+Hibernate: insert into OrderBook (orderid, bookid, quantity, id) values (?, ?, ?, ?)
+Hibernate: delete from ShoppingCart where userid=?
+createOrder Function Test: 21
+
+Hibernate: select countentit0_.id as id1_3_0_, countentit0_.counts as counts2_3_0_ from Counts countentit0_ where countentit0_.id=?
+Hibernate: select countentit0_.id as id1_3_0_, countentit0_.counts as counts2_3_0_ from Counts countentit0_ where countentit0_.id=?
+Hibernate: update Counts set counts=? where id=?
+Oid: 21
+Hibernate: update Orders set status=? where id=?
+Rows affected: 1 Oid:21
+confirmOrder Function Test: true
+
+Hibernate: select orderentit0_.id as id1_5_, orderentit0_.userid as userid2_5_, orderentit0_.generationtime as generati3_5_, orderentit0_.totalprice as totalpri4_5_, orderentit0_.addressid as addressi5_5_, orderentit0_.status as status6_5_, orderentit0_.shipping as shipping7_5_, orderentit0_.tax as tax8_5_, orderentit0_.aftertaxprice as aftertax9_5_, orderentit0_.amount as amount10_5_ from Orders orderentit0_ where orderentit0_.userid=?
+DisplayMyOrder Function Test: [com.team404.bookstore.entity.OrderEntity@ff5548eb]
+
+Hibernate: select orderbooke0_.id as id1_4_, orderbooke0_.orderid as orderid2_4_, orderbooke0_.bookid as bookid3_4_, orderbooke0_.quantity as quantity4_4_ from OrderBook orderbooke0_ where orderbooke0_.orderid=?
+GetOrderBooks Function Test: [com.team404.bookstore.entity.OrderBookEntity@fcf090c, com.team404.bookstore.entity.OrderBookEntity@fcf1110]
+

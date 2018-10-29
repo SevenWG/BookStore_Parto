@@ -55,7 +55,6 @@ public class OrderDao {
     public void UpdateOrderStatus(int id, boolean flag) {
         Session session = sessionFactory.openSession();
         Transaction transaction = null;
-
         try {
             transaction = session.beginTransaction();
             Query query = session.getNamedQuery("UpdateOrderStatusQuery");
@@ -66,7 +65,7 @@ public class OrderDao {
             }
             query.setParameter("id", id);
             int result = query.executeUpdate();
-            System.out.println("Rows affected: " + result);
+            System.out.println("Rows affected: " + result + " Oid:" +id);
             transaction.commit();
         } catch (HibernateException e) {
             if (transaction != null) transaction.rollback();
