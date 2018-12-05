@@ -30,7 +30,8 @@
 <div class="account">
     <div class="container">
         <div class="register">
-            <form method="post" action="/UserRegisterServlet" id="registerForm" name="registerForm">
+            <form method="post" action="/FrontControllerServlet" id="registerForm" name="registerForm">
+                <input hidden="hidden" name="useraction" value="register">
                 <div class="register-top-grid">
                     <h3>Personal information</h3>
                     <div class="input col-lg-12">

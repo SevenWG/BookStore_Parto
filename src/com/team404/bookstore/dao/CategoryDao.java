@@ -10,10 +10,10 @@ import org.hibernate.cfg.Configuration;
 import java.util.List;
 
 public class CategoryDao {
-    private static SessionFactory sessionFactory;
+
+    private static SessionFactory sessionFactory = HibernateConnection.singleSessionFactiory();
 
     public CategoryEntity getCategoryById(int id) {
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
         Session session = sessionFactory.openSession();
 
         CategoryEntity categoryEntity = null;
@@ -33,7 +33,6 @@ public class CategoryDao {
     }
 
     public List<CategoryEntity> ListCategory() {
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
         Session session = sessionFactory.openSession();
 
         Transaction transaction = null;

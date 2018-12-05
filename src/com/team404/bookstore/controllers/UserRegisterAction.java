@@ -5,20 +5,14 @@ import com.team404.bookstore.entity.UserEntity;
 import com.team404.bookstore.service.OrderProcessService;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet("/UserRegisterServlet")
-/*
-    User calls this servlet to register a new account
- */
-public class UserRegisterServlet extends HttpServlet
+public class UserRegisterAction implements UserAction
 {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+    @Override
+    public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         String firstName = request.getParameter("first_name");
         String lastName = request.getParameter("last_name");
@@ -35,18 +29,18 @@ public class UserRegisterServlet extends HttpServlet
             we should validate the register form information in advance
          */
         if (firstName != null && firstName.length() > 0 &&
-            lastName != null && lastName.length() > 0 &&
-            emailUserName != null && emailUserName.length() > 0 &&
-            emailUserName.indexOf("@") > 0 &&
-            emailUserName.indexOf("@") < emailUserName.length() - 1 &&
-            country != null && country.length() > 0 &&
-            province != null && province.length() > 0 &&
-            street != null && street.length() > 0 &&
-            zipcode != null && zipcode.length() > 0 &&
-            phone != null && phone.length() > 0 &&
-            password != null && password.length() >= 6 &&
-            confirmPass != null && confirmPass.length() >= 6 &&
-            password.equals(confirmPass) && isNumeric(phone))
+                lastName != null && lastName.length() > 0 &&
+                emailUserName != null && emailUserName.length() > 0 &&
+                emailUserName.indexOf("@") > 0 &&
+                emailUserName.indexOf("@") < emailUserName.length() - 1 &&
+                country != null && country.length() > 0 &&
+                province != null && province.length() > 0 &&
+                street != null && street.length() > 0 &&
+                zipcode != null && zipcode.length() > 0 &&
+                phone != null && phone.length() > 0 &&
+                password != null && password.length() >= 6 &&
+                confirmPass != null && confirmPass.length() >= 6 &&
+                password.equals(confirmPass) && isNumeric(phone))
         {
             UserEntity userEntity = new UserEntity();
             userEntity.setUsername(emailUserName);
@@ -81,11 +75,6 @@ public class UserRegisterServlet extends HttpServlet
             System.out.println("Register fails, invalid information!");
             response.sendRedirect("/pages/register.jsp");
         }
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-    {
-        doPost(request, response);
     }
     /*
         A function to determine if the String is numeric

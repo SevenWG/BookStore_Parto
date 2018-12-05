@@ -2,12 +2,7 @@ package com.team404.bookstore.service;
 
 import com.team404.bookstore.dao.*;
 import com.team404.bookstore.entity.*;
-import org.hibernate.internal.build.AllowSysOut;
 
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-
-import java.util.Date;
 import java.util.List;
 
 public class OrderProcessService {
@@ -18,6 +13,9 @@ public class OrderProcessService {
     private OrderDao orderDao;
     private OrderBookDao orderBookDao;
     private CountDao countDao;
+
+    private DaoFactoryImpl daoFactory = DaoFactoryImpl.SingleDaoFactory();
+    private OrderServiceFacade orderServiceFacade;
 
     /*Submit Function*/
     public boolean CreateAccount(UserEntity userEntity, AddressEntity addressEntity) {
@@ -103,10 +101,16 @@ public class OrderProcessService {
     }
 
     /*Display customers' shopping cart contents*/
+    /*
+     * Implementation of Factory Pattern
+     * */
     public List<ShoppingCartEntity> DisplayShoppingCart(int userid) {
-        shoppingCartDao = new ShoppingCartDao();
+        List<ShoppingCartEntity> list = null;
 
-        return shoppingCartDao.GetShoppingCartByUid(userid);
+        list = (List<ShoppingCartEntity>)daoFactory.
+                ListSomethingById("ShoppingCartDao", "getListById", userid);
+
+        return  list;
     }
 
     /*Delete single item in shopping cart*/
@@ -116,81 +120,18 @@ public class OrderProcessService {
         return shoppingCartDao.DeleteShoppingItemById(id);
     }
 
-    /*Calculate the amount of check-out items*/
-    public int CalculateAmount(List<ShoppingCartEntity> list) {
-        int amount = 0;
-        for (ShoppingCartEntity i : list) {
-            amount += i.getQuantity();
-        }
-        return amount;
-    }
-
-    /*Calculate a order's total cost(without tax)*/
-    public float CalculateTotalPrice(List<ShoppingCartEntity> list) {
-        bookDao = new BookDao();
-        float totalPrice = 0;
-
-        for(ShoppingCartEntity i : list) {
-            BookEntity bookEntity = bookDao.GetBookById(i.getBookid());
-            totalPrice += bookEntity.getPrice()*i.getQuantity();
-        }
-        return totalPrice;
-    }
-
-    /*createOrder function's Inner function:Generate the time when order is created*/
-    public String GetOrderGenerationTime() {
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        return (String)df.format(new Date());
-    }
 
     /*creates a purchase order including shipping, taxes, total amount due based on shopping cart info*/
+    /*We moved the detailed operation into ServiceFace Class*/
     public int createOrder(int userid) {
 
-        shoppingCartDao = new ShoppingCartDao();
-        addressDao = new AddressDao();
-        orderDao = new OrderDao();
+        orderServiceFacade = new OrderServiceFacade();
 
-        OrderEntity orderEntity = new OrderEntity();
-        List<ShoppingCartEntity> list = shoppingCartDao.GetShoppingCartByUid(userid);
-
-        orderEntity.setUserid(userid);
-        orderEntity.setGenerationtime(Timestamp.valueOf(GetOrderGenerationTime()));
-        orderEntity.setTotalprice(CalculateTotalPrice(list));
-        orderEntity.setAddressid(addressDao.getAddressByUid(userid).getId());
-        orderEntity.setStatus("Processing");
-
-        if(addressDao.getAddressByUid(userid).getProvince().equals("ON")) {
-            orderEntity.setShipping(5);
-            orderEntity.setTax(orderEntity.getTotalprice()*0.13);
-            orderEntity.setAftertaxprice(orderEntity.getTotalprice()*1.13+orderEntity.getShipping());
-        }else {
-            orderEntity.setShipping(8);
-            orderEntity.setTax(orderEntity.getTotalprice()*0.08);
-            orderEntity.setAftertaxprice(orderEntity.getTotalprice()*1.08+orderEntity.getShipping());
-        }
-
-        orderEntity.setAmount(CalculateAmount(list));
-
-        int id = orderDao.AddOrder(orderEntity);
-
-        createOrderBook(list, id);
-
-        shoppingCartDao.DeleteShoppingItems(userid);
+        int id = orderServiceFacade.OrderGnerator(userid);
 
         return id;
     }
 
-    /*Create & Save OrderBook entities by using ShoppingCart entities*/
-    public void createOrderBook(List<ShoppingCartEntity> list, int id) {
-        orderBookDao = new OrderBookDao();
-        for(ShoppingCartEntity i : list) {
-            OrderBookEntity orderBookEntity = new OrderBookEntity();
-            orderBookEntity.setOrderid(id);
-            orderBookEntity.setBookid(i.getBookid());
-            orderBookEntity.setQuantity(i.getQuantity());
-            orderBookDao.AddOrderBook(orderBookEntity);
-        }
-    }
 
     /*Confirm User's Order, Fail every 5th times among every orders*/
     public boolean confirmOrder(int orderid) {
@@ -211,10 +152,16 @@ public class OrderProcessService {
     }
 
     /*My Order Page-Display User's Order List(Should be used with some other functions to display the details)*/
+    /*
+     * Implementation of Factory Pattern
+     * */
     public List<OrderEntity> DisplayMyOrder (int userid) {
-        orderDao = new OrderDao();
 
-        return orderDao.GetOdersByUid(userid);
+        List<OrderEntity> list =
+                (List<OrderEntity>)daoFactory.
+                        ListSomethingById("OrderDao", "getListById", userid);
+
+        return  list;
     }
     /*
         Get a list of OrderBookEntity based on orderid

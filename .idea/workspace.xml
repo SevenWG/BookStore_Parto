@@ -7,32 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8202cd43-65ec-40f7-82eb-6faddf4e5d43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_api_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/standard.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/team404/bookstore/service/ProductCatalogServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/bookstore_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/bookstore_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_3_6_5_3_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_3_6_5_3_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_5_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/DaoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/DaoFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/HibernateConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/AmountCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/AmountCalculatorInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/OrderServiceFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/PriceCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/PriceCalculatorInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/TimeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/TimeGeneratorInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/41564867-4b10-459b-bd75-1dd375d46589.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/41564867-4b10-459b-bd75-1dd375d46589.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/ConfirmOrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/ConfirmOrderServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/DeleteCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/DeleteCartServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/DisplayCheckoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/DisplayCheckoutServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/DisplayOrdersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/DisplayOrdersServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/DisplayShoppingCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/DisplayShoppingCartServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/GetAllProductsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/GetAllProductsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/GetByCategoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/GetByCategoryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/GetDetailServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/GetDetailServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/MyCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/MyCartServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/UserLoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/UserLoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/UserLogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/UserLogoutServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/UserRegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/UserRegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/UserLoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/UserLogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/controllers/UserRegisterServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/AddressDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/AddressDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/BookDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/CategoryDao.class" afterDir="false" />
@@ -41,36 +31,43 @@
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/OrderDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/ShoppingCartDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/ShoppingCartDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/AddressEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/AddressEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/BookCartCombine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/BookCartCombine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/BookEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/BookEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/CategoryEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/CategoryEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/CountEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/CountEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/OrderBookCombine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/OrderBookCombine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/OrderBookEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/OrderBookEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/OrderEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/OrderEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/OrderEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/OrderEntity.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/ShoppingCartEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/ShoppingCartEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/entity/UserEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/filter/LoginFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/filter/ReqResponseFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/filter/ReqResponseFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/service/OrderProcessService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/service/OrderProcessService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/service/ProductCatalogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/service/ProductCatalogService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/service/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/team404/bookstore/service/ServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/ConfirmOrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/ConfirmOrderServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/DeleteCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/DeleteCartServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/DisplayCheckoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/DisplayCheckoutServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/DisplayOrdersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/DisplayOrdersServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/DisplayShoppingCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/DisplayShoppingCartServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/GetAllProductsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/GetAllProductsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/GetByCategoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/GetByCategoryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/GetDetailServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/GetDetailServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/MyCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/MyCartServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/UserLoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/UserLoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/UserLogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/UserLogoutServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/UserRegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/UserRegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jstl.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/standard.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/css/cmxform.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/css/cmxform.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk2.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk3.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk4.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk5.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk6.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk7.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk8.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk9.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bk9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/additional-methods.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/form-validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/form-validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/simpleCart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/simpleCart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/fail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/fail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/orders.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/signin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/signin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/pages/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/UserLoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/UserLogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/controllers/UserRegisterServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/AddressDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/AddressDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/BookDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/CategoryDao.class" afterDir="false" />
@@ -79,28 +76,69 @@
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/OrderDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/ShoppingCartDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/ShoppingCartDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/AddressEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/AddressEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/BookCartCombine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/BookCartCombine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/BookEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/BookEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/CategoryEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/CategoryEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/CountEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/CountEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/OrderBookCombine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/OrderBookCombine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/OrderBookEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/OrderBookEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/OrderEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/OrderEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/OrderEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/OrderEntity.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/ShoppingCartEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/ShoppingCartEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/entity/UserEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/filter/LoginFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/filter/ReqResponseFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/filter/ReqResponseFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/service/OrderProcessService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/service/OrderProcessService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/service/ProductCatalogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/service/ProductCatalogService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/service/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/com/team404/bookstore/service/ServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookstore/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookstore/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/bookstore/com/team404/bookstore/service/OrderProcessServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/bookstore/com/team404/bookstore/service/OrderProcessServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/ConfirmOrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/ConfirmOrderServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DeleteCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DeleteCartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayCheckoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayCheckoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayOrdersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayOrdersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayShoppingCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayShoppingCartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetAllProductsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetAllProductsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetByCategoryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetByCategoryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetDetailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/MyCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/MyCartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserLoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserLogoutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserRegisterServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/dao/AddressDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/AddressDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/dao/CountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/CountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderBookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderBookDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderEntity.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/dao/ShoppingCartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/ShoppingCartDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/entity/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/entity/BookEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/entity/ShoppingCartEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/entity/ShoppingCartEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/service/OrderProcessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/OrderProcessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/service/ProductCatalogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/ProductCatalogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/team404/bookstore/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/team404/bookstore/service/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/team404/bookstore/service/OrderProcessServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/team404/bookstore/service/OrderProcessServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/team404/bookstore/service/ProductCatalogServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/team404/bookstore/service/ProductCatalogServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jstl.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/cmxform.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/cmxform.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/bk1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/bk1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/bk2.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/bk2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/bk3.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/bk3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/bk4.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/bk4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/bk5.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/bk5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/bk6.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/bk6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/bk7.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/bk7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/bk8.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/bk8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/bk9.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/bk9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/additional-methods.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/form-validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/form-validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/simpleCart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/simpleCart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/fail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/fail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/orders.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/signin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/signin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/success.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,48 +173,6 @@
         <item name="bookstore@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bookstore@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="Category: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bookstore@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="Counts: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bookstore@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="OrderBook: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bookstore@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="Orders: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bookstore@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="ShoppingCart: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bookstore@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="User: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -251,38 +247,58 @@
     <session id="-921919134">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="18" />
+          <entry key="address" value="2" />
+          <entry key="book" value="4" />
+          <entry key="category" value="2" />
+          <entry key="java" value="227" />
+          <entry key="js" value="3" />
+          <entry key="jsp" value="6" />
+          <entry key="orderbook" value="3" />
+          <entry key="orders" value="1" />
+          <entry key="po" value="1" />
+          <entry key="poitem" value="1" />
+          <entry key="shoppingcart" value="5" />
           <entry key="txt" value="13" />
-          <entry key="xml" value="2" />
+          <entry key="user" value="4" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="18" />
+          <entry key="Database Element" value="23" />
+          <entry key="JAVA" value="227" />
+          <entry key="JSP" value="6" />
+          <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1294" />
+          <entry key="cell" value="18" />
+          <entry key="dummy" value="5" />
+          <entry key="java" value="7298" />
           <entry key="txt" value="4" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1294" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="7298" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Scratch" value="18" />
           <entry key="XML" value="14" />
         </counts>
       </usages-collector>
@@ -294,19 +310,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/team404/bookstore/service/ProductCatalogServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/OrderProcessService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="138" column="34" lean-forward="true" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/PriceCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/PriceCalculatorInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/DaoFactoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="110" column="31" lean-forward="true" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+              <caret line="38" column="28" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/ProductCatalogService.java">
+        <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/DaoFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/ServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
@@ -318,10 +373,11 @@
       <list>
         <option value="hibernate-configuration-5.2" />
         <option value="hibernate-main-5.2" />
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -333,12 +389,14 @@
       <find>register-</find>
       <find>li.sort</find>
       <find>ul.place li</find>
+      <find>request</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/com/team404/bookstore/controllers</dir>
+      <dir>$PROJECT_DIR$/src/com/team404/bookstore/dao</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -347,32 +405,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/BookDao.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/CategoryDao.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/CountDao.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/ShoppingCartDao.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderBookDao.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/CountEntity.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/CountEntity.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderEntity.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/BookCartCombine.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/index.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/BookEntity.java" />
-        <option value="$PROJECT_DIR$/web/pages/orders.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/fail.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/success.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/products.jsp" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/filter/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/web/js/site.js" />
-        <option value="$PROJECT_DIR$/web/pages/mycart.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/header.jsp" />
-        <option value="$PROJECT_DIR$/web/js/form-validation.js" />
-        <option value="$PROJECT_DIR$/web/pages/checkout.jsp" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/ProductCatalogService.java" />
         <option value="$PROJECT_DIR$/web/pages/signin.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/pages/register.jsp" />
@@ -380,24 +412,50 @@
         <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserLoginServlet.java" />
         <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserRegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserLogoutServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetDetailServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetByCategoryServlet.java" />
         <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/ConfirmOrderServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetAllProductsServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayShoppingCartServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DeleteCartServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayOrdersServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/MyCartServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayCheckoutServlet.java" />
         <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/BookEntity.hbm.xml" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/ServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/OrderProcessService.java" />
         <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderEntity.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderDao.java" />
         <option value="$PROJECT_DIR$/OrderProcessServiceTestLog.txt" />
-        <option value="$PROJECT_DIR$/test/com/team404/bookstore/service/OrderProcessServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/CountDao.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderBookDao.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/web/pages/mycart.jsp" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/Entity.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/BookEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetDetailServlet.java" />
         <option value="$PROJECT_DIR$/test/com/team404/bookstore/service/ProductCatalogServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/entity/ShoppingCartEntity.java" />
+        <option value="$PROJECT_DIR$/test/com/team404/bookstore/service/OrderProcessServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DeleteCartServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayCheckoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayOrdersServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayShoppingCartServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetByCategoryServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/MyCartServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/ShoppingCartDao.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/ServiceFacade.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/BookDao.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/FunClass.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetAllProductsServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/AddressDao.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/HibernateConnection.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/DaoFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/OrderServiceFacade.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/AmountCalculator.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/AmountCalculatorInterface.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/PriceCalculator.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/PriceCalculatorInterface.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/TimeGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/TimeGeneratorInterface.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/ProductCatalogService.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/OrderProcessService.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/dao/DaoFactoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/team404/bookstore/service/ServiceTest.java" />
       </list>
     </option>
   </component>
@@ -414,7 +472,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -425,6 +483,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -446,14 +506,47 @@
             <path>
               <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
               <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,13 +555,14 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="41564867-4b10-459b-bd75-1dd375d46589" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/weiwei/IdeaProjects/BookStore1/bookstore/src/com/team404/bookstore/service/ProductCatalogService.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540775820261" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543957534747" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.11.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
@@ -488,18 +582,18 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/pages" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.team404.bookstore.entity" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/team404/bookstore" />
       <recent name="$PROJECT_DIR$/src/com/team404/bookstore/dao" />
       <recent name="$PROJECT_DIR$/src/com/team404/bookstore/service" />
       <recent name="$PROJECT_DIR$/web/js" />
       <recent name="$PROJECT_DIR$/web/images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.team404.bookstore.entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -514,9 +608,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductCatalogServiceTest.getCategory">
+  <component name="RunManager" selected="Application.ServiceTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.team404.bookstore.service.ServiceTest" />
+      <module name="bookstore" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team404.bookstore.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.team404.bookstore.dao.Test" />
+      <module name="bookstore" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team404.bookstore.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -544,23 +666,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductCatalogServiceTest.getCategoryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bookstore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.team404.bookstore.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.team404.bookstore.service" />
-      <option name="MAIN_CLASS_NAME" value="com.team404.bookstore.service.ProductCatalogServiceTest" />
-      <option name="METHOD_NAME" value="getCategoryList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProductCatalogServiceTest.getProductInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bookstore" />
       <extension name="coverage">
@@ -572,23 +677,6 @@
       <option name="PACKAGE_NAME" value="com.team404.bookstore.service" />
       <option name="MAIN_CLASS_NAME" value="com.team404.bookstore.service.ProductCatalogServiceTest" />
       <option name="METHOD_NAME" value="getProductInfo" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductCatalogServiceTest.getProductList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bookstore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.team404.bookstore.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.team404.bookstore.service" />
-      <option name="MAIN_CLASS_NAME" value="com.team404.bookstore.service.ProductCatalogServiceTest" />
-      <option name="METHOD_NAME" value="getProductList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -708,19 +796,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9.0.12" />
-      <item itemvalue="JUnit.ProductCatalogServiceTest.getCategoryList" />
-      <item itemvalue="JUnit.ProductCatalogServiceTest.getProductList" />
       <item itemvalue="JUnit.ProductCatalogServiceTest.getProductList1" />
       <item itemvalue="JUnit.ProductCatalogServiceTest.getProductInfo" />
       <item itemvalue="JUnit.ProductCatalogServiceTest.getCategory" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.ServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServiceTest" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.ProductCatalogServiceTest.getCategory" />
         <item itemvalue="JUnit.ProductCatalogServiceTest.getProductInfo" />
         <item itemvalue="JUnit.ProductCatalogServiceTest.getProductList1" />
-        <item itemvalue="JUnit.ProductCatalogServiceTest.getProductList" />
-        <item itemvalue="JUnit.ProductCatalogServiceTest.getCategoryList" />
       </list>
     </recent_temporary>
   </component>
@@ -757,7 +845,11 @@
       <workItem from="1540681792140" duration="2835000" />
       <workItem from="1540739795169" duration="1981000" />
       <workItem from="1540756814678" duration="1990000" />
-      <workItem from="1540759318941" duration="9109000" />
+      <workItem from="1540759318941" duration="16478000" />
+      <workItem from="1542850075912" duration="22572000" />
+      <workItem from="1543122359169" duration="13451000" />
+      <workItem from="1543801869720" duration="1609000" />
+      <workItem from="1543868202292" duration="11068000" />
     </task>
     <servers />
   </component>
@@ -794,7 +886,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129900000" />
+    <option name="totallyTimeSpent" value="185969000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -806,11 +898,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7456522" visible="true" weight="0.19670959" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Persistence" order="2" sideWeight="0.24770643" side_tool="true" weight="0.1825525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5917065" visible="true" weight="0.22889842" />
+      <window_info id="Structure" order="1" sideWeight="0.40829346" side_tool="true" visible="true" weight="0.22889842" />
+      <window_info id="Persistence" order="2" sideWeight="0.2527646" side_tool="true" weight="0.19957082" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -819,30 +912,66 @@
       <window_info id="Web" order="8" sideWeight="0.25434783" side_tool="true" weight="0.22455573" />
       <window_info id="Learn" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3273906" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.27951807" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32650602" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.24457832" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32901135" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32901135" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32901135" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.5795181" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32650602" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.12650603" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32901135" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32891566" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.15236051" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.12517883" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5933014" visible="true" weight="0.22889842" />
+      <window_info id="Structure" order="1" sideWeight="0.40669855" side_tool="true" visible="true" weight="0.22889842" />
+      <window_info id="Persistence" order="2" sideWeight="0.2527646" side_tool="true" weight="0.19957082" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50136983" side_tool="true" weight="0.24555735" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Web" order="8" sideWeight="0.25434783" side_tool="true" weight="0.22455573" />
+      <window_info id="Learn" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32650602" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.24457832" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32901135" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32901135" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.5795181" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.12650603" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.12517883" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -850,204 +979,205 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/pages/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bookstore.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderBookCombine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/imagezoom.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/flexslider.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/form.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/form-validation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/ShoppingCartDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/entity/CategoryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/products.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/signin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="3338" column="19" selection-start-line="3338" selection-start-column="19" selection-end-line="3338" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/checkout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserLogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetDetailServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetByCategoryServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="63" column="40" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetAllProductsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/DeleteCartServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+        <state relative-caret-position="265">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayOrdersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayCheckoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/mycart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/ConfirmOrderServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/DisplayShoppingCartServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-403">
-          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/filter/ReqResponseFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/filter/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="11" column="211" selection-start-line="11" selection-start-column="211" selection-end-line="11" selection-end-column="211" />
+        <state relative-caret-position="240">
+          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/entity/BookEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
+        <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserLoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://41564867-4b10-459b-bd75-1dd375d46589/schema/bookstore/table/poitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://41564867-4b10-459b-bd75-1dd375d46589/schema/bookstore/table/po">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://41564867-4b10-459b-bd75-1dd375d46589/schema/bookstore/table/category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/Test.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/FunClass.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/_UserLoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/_UserLogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1032#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/_UserRegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/FrontControllerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetByCategoryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/GetAllProductsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/header.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserLoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/filter/ReqResponseFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/CountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="86" column="34" lean-forward="true" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/AddressDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://41564867-4b10-459b-bd75-1dd375d46589/schema/bookstore/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderBookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="95" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
         </state>
       </provider>
     </entry>
@@ -1058,126 +1188,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/entity/BookEntity.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/ConfirmOrderServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        <state relative-caret-position="190">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/entity/CategoryEntity.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/BookDao.java">
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/entity/ShoppingCartEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/UserRegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
+    <entry file="das://41564867-4b10-459b-bd75-1dd375d46589/schema/bookstore/table/orders">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+    <entry file="das://41564867-4b10-459b-bd75-1dd375d46589/schema/bookstore/table/orderbook">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderBookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+    <entry file="das://41564867-4b10-459b-bd75-1dd375d46589/schema/bookstore/table/shoppingcart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/BookStore0/src/com/team404/bookstore/entity/OrderBookEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/HibernateConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderEntity.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="40" />
+        <state relative-caret-position="12">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/AddressDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+    <entry file="das://41564867-4b10-459b-bd75-1dd375d46589/schema/bookstore/table/address">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/entity/OrderEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/ShoppingCartDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562">
-          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
+        <state relative-caret-position="225">
+          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/controllers/MyCartServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="250">
+          <caret line="48" column="77" lean-forward="true" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/ServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/AmountCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="22" selection-start-line="22" selection-end-line="24" selection-end-column="46" />
+        <state relative-caret-position="90">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/OrderDao.java">
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/AmountCalculatorInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrderProcessServiceTestLog.txt">
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/TimeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/ProductCatalogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/TimeGeneratorInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/PriceCalculatorInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/PriceCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/OrderServiceFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/OrderProcessService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="140" column="41" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="41" />
+        <state relative-caret-position="168">
+          <caret line="138" column="34" lean-forward="true" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/team404/bookstore/service/OrderProcessServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="205" selection-start-line="205" selection-end-line="219" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/team404/bookstore/service/ProductCatalogServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/DaoFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="110" column="31" lean-forward="true" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProductCatalogServiceTestLog.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/ProductCatalogService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/service/ServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="591">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/team404/bookstore/dao/DaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,7 @@
 package com.team404.bookstore.dao;
 
 import com.team404.bookstore.entity.BookEntity;
+import com.team404.bookstore.entity.Entity;
 import com.team404.bookstore.entity.UserEntity;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -11,21 +12,86 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class BookDao {
-    private static SessionFactory sessionFactory;
+public class BookDao implements DaoFactory{
+    private static SessionFactory sessionFactory = HibernateConnection.singleSessionFactiory();
 
-    public List<BookEntity> ListBook() {
+//    public List<BookEntity> ListBook() {
+//        List<BookEntity> list = null;
+//        Session session = sessionFactory.openSession();
+//
+//        Transaction transaction = null;
+//        try {
+//            transaction = session.beginTransaction();
+//            list = session.getNamedQuery("ListBookQuery").list();
+//            transaction.commit();
+//        } catch (HibernateException e) {
+//            if (transaction!=null) transaction.rollback();
+//            e.printStackTrace();
+//        } finally {
+//            session.close();
+//        }
+//        return list;
+//    }
+
+//    public List<BookEntity> getEntityList(){
+//        List<BookEntity> list = null;
+//        Session session = sessionFactory.openSession();
+//
+//        Transaction transaction = null;
+//        try {
+//            transaction = session.beginTransaction();
+//            list = session.getNamedQuery("ListBookQuery").list();
+//            transaction.commit();
+//        } catch (HibernateException e) {
+//            if (transaction != null) transaction.rollback();
+//            e.printStackTrace();
+//        } finally {
+//            session.close();
+//        }
+//        return list;
+//    }
+
+//    public List<BookEntity> ListBook(int categoryid) {
+//        List<BookEntity> list = null;
+//        Session session = sessionFactory.openSession();
+//
+//        Transaction transaction = null;
+//        try {
+//            transaction = session.beginTransaction();
+//            Query query = session.getNamedQuery("ListBookByCidQuery");
+//            query.setParameter("categoryid", categoryid);
+//            list = query.list();
+//            transaction.commit();
+//        } catch (HibernateException e) {
+//            if (transaction!=null) transaction.rollback();
+//            e.printStackTrace();
+//        } finally {
+//            session.close();
+//        }
+//        return list;
+//    }
+
+    public List<BookEntity> getListById(int categoryid) {
         List<BookEntity> list = null;
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
         Session session = sessionFactory.openSession();
 
         Transaction transaction = null;
         try {
-            transaction = session.beginTransaction();
-            list = session.getNamedQuery("ListBookQuery").list();
-            transaction.commit();
+            if(categoryid != 0)
+            {
+                transaction = session.beginTransaction();
+                Query query = session.getNamedQuery("ListBookByCidQuery");
+                query.setParameter("categoryid", categoryid);
+                list = query.list();
+                transaction.commit();
+            }
+            else {
+                transaction = session.beginTransaction();
+                list = session.getNamedQuery("ListBookQuery").list();
+                transaction.commit();
+            }
         } catch (HibernateException e) {
-            if (transaction!=null) transaction.rollback();
+            if (transaction != null) transaction.rollback();
             e.printStackTrace();
         } finally {
             session.close();
@@ -33,33 +99,35 @@ public class BookDao {
         return list;
     }
 
-    public List<BookEntity> ListBook(int categoryid) {
-        List<BookEntity> list = null;
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-        Session session = sessionFactory.openSession();
+//    public BookEntity GetBookById(String id) {
+//        BookEntity bookEntity = null;
+//        Session session = sessionFactory.openSession();
+//
+//        Transaction transaction = null;
+//
+//        try {
+//            transaction = session.beginTransaction();
+//            bookEntity= (BookEntity) session.get(BookEntity.class, id);
+//            transaction.commit();
+//
+//        } catch (HibernateException e) {
+//            if (transaction!=null) transaction.rollback();
+//            e.printStackTrace();
+//        } finally {
+//            session.close();
+//        }
+//        return  bookEntity;
+//    }
 
-        Transaction transaction = null;
-        try {
-            transaction = session.beginTransaction();
-            Query query = session.getNamedQuery("ListBookByCidQuery");
-            query.setParameter("categoryid", categoryid);
-            list = query.list();
-            transaction.commit();
-        } catch (HibernateException e) {
-            if (transaction!=null) transaction.rollback();
-            e.printStackTrace();
-        } finally {
-            session.close();
-        }
-        return list;
-    }
+    public BookEntity getEntityById(int id_int) {
 
-    public BookEntity GetBookById(String id) {
         BookEntity bookEntity = null;
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
         Session session = sessionFactory.openSession();
-
         Transaction transaction = null;
+
+        String id = String.valueOf(id_int);
+
+        System.out.println(id);
 
         try {
             transaction = session.beginTransaction();
@@ -67,7 +135,7 @@ public class BookDao {
             transaction.commit();
 
         } catch (HibernateException e) {
-            if (transaction!=null) transaction.rollback();
+            if (transaction != null) transaction.rollback();
             e.printStackTrace();
         } finally {
             session.close();

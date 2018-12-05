@@ -1,5 +1,6 @@
 package com.team404.bookstore.dao;
 
+import com.team404.bookstore.entity.Entity;
 import com.team404.bookstore.entity.OrderEntity;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -10,12 +11,10 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class OrderDao {
-    private static SessionFactory sessionFactory =
-            new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+public class OrderDao implements DaoFactory{
 
     public int AddOrder (OrderEntity orderEntity) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateConnection.getSession();
         int id = 0;
         Transaction transaction = null;
         try {
@@ -32,8 +31,9 @@ public class OrderDao {
         return id;
     }
 
-    public List<OrderEntity> GetOdersByUid(int userid) {
-        Session session = sessionFactory.openSession();
+
+    public List<OrderEntity> getListById (int userid) {
+        Session session = HibernateConnection.getSession();
         Transaction transaction = null;
         List<OrderEntity> list = null;
 
@@ -53,7 +53,7 @@ public class OrderDao {
     }
 
     public void UpdateOrderStatus(int id, boolean flag) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateConnection.getSession();
         Transaction transaction = null;
         try {
             transaction = session.beginTransaction();
@@ -74,5 +74,45 @@ public class OrderDao {
             session.close();
         }
     }
+
+//    public List<OrderEntity> GetOdersByUid(int userid) {
+//        Session session = HibernateConnection.getSession();
+//        Transaction transaction = null;
+//        List<OrderEntity> list = null;
+//
+//        try {
+//            transaction = session.beginTransaction();
+//            Query query = session.getNamedQuery("GetOdersByUidQuery");
+//            query.setParameter("userid", userid);
+//            list = query.list();
+//            transaction.commit();
+//        } catch (HibernateException e) {
+//            if (transaction != null) transaction.rollback();
+//            e.printStackTrace();
+//        } finally {
+//            session.close();
+//        }
+//        return list;
+//    }
+
+    public OrderEntity getEntityById (int id) {
+
+        Session session = HibernateConnection.getSession();
+        Transaction transaction = null;
+        OrderEntity orderEntity = null;
+
+        try {
+            transaction = session.beginTransaction();
+            orderEntity = (OrderEntity)session.get(OrderEntity.class, id);
+            transaction.commit();
+        } catch (HibernateException e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+        return orderEntity;
+    }
+
 
 }

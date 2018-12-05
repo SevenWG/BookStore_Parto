@@ -83,7 +83,7 @@ public class ProductCatalogServiceTest {
             PrintStream print = new PrintStream(new FileOutputStream(file,true));
             System.setOut(print);
             System.out.println("getProductInfo Function Test: " + productCatalogService.getProductInfo("1118008189"));
-            BookEntity bookEntity = productCatalogService.getProductInfo("1118008189");
+            BookEntity bookEntity = (BookEntity)productCatalogService.getProductInfo("1118008189");
             System.out.println(bookEntity.getBookid() + " " + bookEntity.getTitle() + " " +
                     bookEntity.getAuthor() + " " + bookEntity.getPrice());
             System.out.println();

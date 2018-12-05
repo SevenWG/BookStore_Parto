@@ -220,91 +220,91 @@ public class OrderProcessServiceTest {
         }
     }
 
-    @Test
-    public void calculateAmount() {
+//    @Test
+//    public void calculateAmount() {
+//
+//        ShoppingCartEntity shoppingCartEntity = new ShoppingCartEntity();
+//        shoppingCartEntity.setUserid(2);
+//        shoppingCartEntity.setQuantity(2);
+//        shoppingCartEntity.setBookid("1627794334");
+//
+//        ShoppingCartEntity shoppingCartEntity1 = new ShoppingCartEntity();
+//        shoppingCartEntity1.setUserid(2);
+//        shoppingCartEntity1.setQuantity(8);
+//        shoppingCartEntity1.setBookid("1627794258");
+//
+//        List<ShoppingCartEntity> list = new ArrayList<>();
+//        list.add(shoppingCartEntity);list.add(shoppingCartEntity1);
+//
+//        try {
+//            File file = new File("OrderProcessServiceTestLog.txt");
+//
+//            if (!file.exists()) {
+//                file.createNewFile();
+//            }
+//
+//            PrintStream print = new PrintStream(new FileOutputStream(file,true));
+//            System.setOut(print);
+//            System.out.println("CalculateAmount Function Test: " + orderProcessService.CalculateAmount(list));
+//            System.out.println();
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
-        ShoppingCartEntity shoppingCartEntity = new ShoppingCartEntity();
-        shoppingCartEntity.setUserid(2);
-        shoppingCartEntity.setQuantity(2);
-        shoppingCartEntity.setBookid("1627794334");
+//    @Test
+//    public void calculateTotalPrice() {
+//
+//        ShoppingCartEntity shoppingCartEntity = new ShoppingCartEntity();
+//        shoppingCartEntity.setUserid(2);
+//        shoppingCartEntity.setQuantity(2);
+//        shoppingCartEntity.setBookid("1627794334");
+//
+//        ShoppingCartEntity shoppingCartEntity1 = new ShoppingCartEntity();
+//        shoppingCartEntity1.setUserid(2);
+//        shoppingCartEntity1.setQuantity(8);
+//        shoppingCartEntity1.setBookid("1627794258");
+//
+//        List<ShoppingCartEntity> list = new ArrayList<>();
+//        list.add(shoppingCartEntity);list.add(shoppingCartEntity1);
+//
+//        try {
+//            File file = new File("OrderProcessServiceTestLog.txt");
+//
+//            if (!file.exists()) {
+//                file.createNewFile();
+//            }
+//
+//            PrintStream print = new PrintStream(new FileOutputStream(file,true));
+//            System.setOut(print);
+//            System.out.println("CalculateTotalPrice Function Test: " + orderProcessService.CalculateTotalPrice(list));
+//            System.out.println();
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
 
-        ShoppingCartEntity shoppingCartEntity1 = new ShoppingCartEntity();
-        shoppingCartEntity1.setUserid(2);
-        shoppingCartEntity1.setQuantity(8);
-        shoppingCartEntity1.setBookid("1627794258");
-
-        List<ShoppingCartEntity> list = new ArrayList<>();
-        list.add(shoppingCartEntity);list.add(shoppingCartEntity1);
-
-        try {
-            File file = new File("OrderProcessServiceTestLog.txt");
-
-            if (!file.exists()) {
-                file.createNewFile();
-            }
-
-            PrintStream print = new PrintStream(new FileOutputStream(file,true));
-            System.setOut(print);
-            System.out.println("CalculateAmount Function Test: " + orderProcessService.CalculateAmount(list));
-            System.out.println();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public void calculateTotalPrice() {
-
-        ShoppingCartEntity shoppingCartEntity = new ShoppingCartEntity();
-        shoppingCartEntity.setUserid(2);
-        shoppingCartEntity.setQuantity(2);
-        shoppingCartEntity.setBookid("1627794334");
-
-        ShoppingCartEntity shoppingCartEntity1 = new ShoppingCartEntity();
-        shoppingCartEntity1.setUserid(2);
-        shoppingCartEntity1.setQuantity(8);
-        shoppingCartEntity1.setBookid("1627794258");
-
-        List<ShoppingCartEntity> list = new ArrayList<>();
-        list.add(shoppingCartEntity);list.add(shoppingCartEntity1);
-
-        try {
-            File file = new File("OrderProcessServiceTestLog.txt");
-
-            if (!file.exists()) {
-                file.createNewFile();
-            }
-
-            PrintStream print = new PrintStream(new FileOutputStream(file,true));
-            System.setOut(print);
-            System.out.println("CalculateTotalPrice Function Test: " + orderProcessService.CalculateTotalPrice(list));
-            System.out.println();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
-
-    @Test
-    public void getOrderGenerationTime() {
-        try {
-            File file = new File("OrderProcessServiceTestLog.txt");
-
-            if (!file.exists()) {
-                file.createNewFile();
-            }
-
-            PrintStream print = new PrintStream(new FileOutputStream(file,true));
-            System.setOut(print);
-            System.out.println("GetOrderGenerationTime Function Test: " + orderProcessService.GetOrderGenerationTime());
-            System.out.println();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//    public void getOrderGenerationTime() {
+//        try {
+//            File file = new File("OrderProcessServiceTestLog.txt");
+//
+//            if (!file.exists()) {
+//                file.createNewFile();
+//            }
+//
+//            PrintStream print = new PrintStream(new FileOutputStream(file,true));
+//            System.setOut(print);
+//            System.out.println("GetOrderGenerationTime Function Test: " + orderProcessService.GetOrderGenerationTime());
+//            System.out.println();
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     @Test
     public void createOrder() {
@@ -325,37 +325,37 @@ public class OrderProcessServiceTest {
         }
     }
 
-    @Test
-    public void createOrderBook() {
-        ShoppingCartEntity shoppingCartEntity = new ShoppingCartEntity();
-        shoppingCartEntity.setUserid(2);
-        shoppingCartEntity.setQuantity(2);
-        shoppingCartEntity.setBookid("1627794334");
-
-        ShoppingCartEntity shoppingCartEntity1 = new ShoppingCartEntity();
-        shoppingCartEntity1.setUserid(2);
-        shoppingCartEntity1.setQuantity(8);
-        shoppingCartEntity1.setBookid("1627794258");
-
-        List<ShoppingCartEntity> list = new ArrayList<>();
-        list.add(shoppingCartEntity);list.add(shoppingCartEntity1);
-
-        try {
-            File file = new File("OrderProcessServiceTestLog.txt");
-
-            if (!file.exists()) {
-                file.createNewFile();
-            }
-
-            PrintStream print = new PrintStream(new FileOutputStream(file,true));
-            System.setOut(print);
-            orderProcessService.createOrderBook(list, 21);
-            System.out.println();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//    public void createOrderBook() {
+//        ShoppingCartEntity shoppingCartEntity = new ShoppingCartEntity();
+//        shoppingCartEntity.setUserid(2);
+//        shoppingCartEntity.setQuantity(2);
+//        shoppingCartEntity.setBookid("1627794334");
+//
+//        ShoppingCartEntity shoppingCartEntity1 = new ShoppingCartEntity();
+//        shoppingCartEntity1.setUserid(2);
+//        shoppingCartEntity1.setQuantity(8);
+//        shoppingCartEntity1.setBookid("1627794258");
+//
+//        List<ShoppingCartEntity> list = new ArrayList<>();
+//        list.add(shoppingCartEntity);list.add(shoppingCartEntity1);
+//
+//        try {
+//            File file = new File("OrderProcessServiceTestLog.txt");
+//
+//            if (!file.exists()) {
+//                file.createNewFile();
+//            }
+//
+//            PrintStream print = new PrintStream(new FileOutputStream(file,true));
+//            System.setOut(print);
+//            orderProcessService.createOrderBook(list, 21);
+//            System.out.println();
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     @Test
     public void confirmOrder() {

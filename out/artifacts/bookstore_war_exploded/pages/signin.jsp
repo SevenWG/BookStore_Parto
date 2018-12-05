@@ -29,7 +29,8 @@
 <div class="account">
     <div class="container">
         <div class="register">
-                <form action="/UserLoginServlet" method="post" id="signInForm" name="signInForm">
+                <form action="/FrontControllerServlet" method="post" id="signInForm" name="signInForm">
+                    <input hidden="hidden" name="useraction" value="login">
                     <div class="register-top-grid ">
                         <h3>Sign in</h3>
                         <div class="input col-lg-12">

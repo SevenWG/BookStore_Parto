@@ -2,7 +2,7 @@ package com.team404.bookstore.entity;
 
 import java.util.Objects;
 
-public class BookEntity {
+public class BookEntity extends Entity{
     private String bookid;
     private String title;
     private int price;

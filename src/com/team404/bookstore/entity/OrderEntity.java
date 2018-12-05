@@ -3,7 +3,7 @@ package com.team404.bookstore.entity;
 import java.sql.Timestamp;
 import java.util.Objects;
 
-public class OrderEntity {
+public class OrderEntity extends Entity{
     private int id;
     private int userid;
     private Timestamp generationtime;

@@ -11,8 +11,7 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 public class OrderBookDao {
-    private static SessionFactory sessionFactory =
-            new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+    private static SessionFactory sessionFactory = HibernateConnection.singleSessionFactiory();
 
     public void AddOrderBook(OrderBookEntity orderBookEntity) {
         Session session = sessionFactory.openSession();

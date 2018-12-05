@@ -12,11 +12,9 @@ import java.util.List;
 
 public class CountDao {
 
-    private static SessionFactory sessionFactory;
-
     public CountEntity getCount() {
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-        Session session = sessionFactory.openSession();
+
+        Session session = HibernateConnection.getSession();
 
         CountEntity countEntity = null;
         Transaction transaction = null;
@@ -37,8 +35,8 @@ public class CountDao {
     }
 
     public void CountUpdate() {
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-        Session session = sessionFactory.openSession();
+
+        Session session = HibernateConnection.getSession();
 
         Transaction transaction = null;
 

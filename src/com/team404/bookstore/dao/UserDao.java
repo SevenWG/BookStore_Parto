@@ -9,12 +9,9 @@ import java.util.List;
 
 public class UserDao  {
 
-    private static SessionFactory sessionFactory;
-
     public int AddUser(UserEntity userEntity) {
 
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-        Session session = sessionFactory.openSession();
+        Session session = HibernateConnection.getSession();
 
         Transaction transaction = null;
         int id = 0;
@@ -35,8 +32,7 @@ public class UserDao  {
 
     public UserEntity GetUserById (int id) {
 
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-        Session session = sessionFactory.openSession();
+        Session session = HibernateConnection.getSession();
 
         Transaction transaction = null;
         UserEntity userEntity = null;
@@ -57,8 +53,7 @@ public class UserDao  {
 
     public UserEntity GetUserbyAccount (String username) {
 
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-        Session session = sessionFactory.openSession();
+        Session session = HibernateConnection.getSession();
 
         Transaction transaction = null;
         UserEntity userEntity = null;

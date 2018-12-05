@@ -12,12 +12,11 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 public class AddressDao {
-    private static SessionFactory sessionFactory;
+    private static SessionFactory sessionFactory = HibernateConnection.singleSessionFactiory();
 
     public int AddAddress(AddressEntity addressEntity) {
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-        Session session = sessionFactory.openSession();
 
+        Session session = HibernateConnection.getSession();
         Transaction transaction = null;
         int id = 0;
 
@@ -36,8 +35,9 @@ public class AddressDao {
     }
 
     public AddressEntity getAddressByUid(int userid) {
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-        Session session = sessionFactory.openSession();
+
+        Session session = HibernateConnection.getSession();
+
         Transaction transaction = null;
         AddressEntity addressEntity = null;
         try {
